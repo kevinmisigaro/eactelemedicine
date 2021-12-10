@@ -1,155 +1,409 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v.3" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lyfplus | EAC Telemedicine</title>
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="EAC Cross-Border Telemedicine Platform" />
+    <meta name="description" content="EAC Cross-Border Telemedicine Platform" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://eactelemedicine.lyfplus.com/" />
+    <meta
+      property="og:title"
+      content="EAC Cross-Border Telemedicine Platform"
+    />
+    <meta
+      property="og:description"
+      content="EAC Cross-Border Telemedicine Platform"
+    />
+    <meta
+      property="og:image"
+      content="https://uideck.com/wp-content/uploads/2021/09/play-meta-bs.jpg"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://eactelemedicine.lyfplus.com/"
+    />
+    <meta
+      property="twitter:title"
+      content="EAC Cross-Border Telemedicine Platform"
+    />
+    <meta
+      property="twitter:description"
+      content="EAC Cross-Border Telemedicine Platform"
+    />
+    <meta
+      property="twitter:image"
+      content="https://uideck.com/wp-content/uploads/2021/09/play-meta-bs.jpg"
+    />
+
+    <!--====== Favicon Icon ======-->
+    <!-- <link
+      rel="shortcut icon"
+      href="assets/images/favicon.svg"
+      type="image/svg"
+    /> -->
+
+    <style>
+      .circle {
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        border-radius: 50%;
+        font-size: 15px;
+        color: #fff;
+        text-align: center;
+        font-weight: bold;
+        background: green;
+        margin-bottom: 10px;
+      }
+
+      .hyperlink {
+        color: #2a7639;
+        font-size: bold;
+      }
+
+      .hyperlink:hover {
+        color: white;
+        background: #2a7639;
+        text-decoration: none;
+      }
+    </style>
+
+    <!-- ===== All CSS files ===== -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/lineicons.css" />
+    <link rel="stylesheet" href="assets/css/ud-styles.css?v.3" />
   </head>
   <body>
-    <div class="container main">
-      <img src="assets/lyfpluslogo.png" alt="logo" class="logo" />
-
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">
-            WHO WE ARE
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"> PROJECTS </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"> PARTNERS </a>
-        </li>
-      </ul>
-
-      <section>
+    <!-- ====== Header Start ====== -->
+    <!-- <header class="ud-header">
+      <div class="container">
         <div class="row">
-          <div class="col-md-6">
-            <h1>EAC Cross-Border Telemedicine Platform.</h1>
-            <br />
-            <p class="header-text">
-              Poor accessibility to healthcare among EAC cross-border truckers,
-              traders and border resident populations as a result of their
-              remote residency and work settings, exposes them to great medical
-              risks which in-turn increases the risk of cross border disease
-              and/or epidemics transmission across East Africa affecting
-              integration and cross-border trade.
-              <a href="#" class="hyperlink" target="_blank">LyfPlus</a> is a telemedicine
-              platform that integrates virtual physician consultation, hospital
-              appointment booking, diagnosis and e-prescription with various
-              healthcare providers to allow users to access important
-              medicalservicesinstantly and conveniently in one platform.
-            </p>
-          </div>
+          <div class="col-lg-12">
+            <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand" href="index.html">
+                <img src="assets/lyfpluslogo.png" alt="Logo" />
+              </a>
+              <button class="navbar-toggler">
+                <span class="toggler-icon"> </span>
+                <span class="toggler-icon"> </span>
+                <span class="toggler-icon"> </span>
+              </button>
 
-          <div class="col-md-6 text-center">
-            <img src="assets/happyteam.jpeg" alt="team" class="happy-team img-fluid" />
+              <div class="navbar-collapse">
+                <ul id="nav" class="navbar-nav mx-auto">
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href="#home">Home</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href="#about">About</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="navbar-btn d-none d-sm-inline-block">
+                <a href="login.html" class="ud-main-btn ud-login-btn">
+                  Sign In
+                </a>
+                <a class="ud-main-btn ud-white-btn" href="javascript:void(0)">
+                  Sign Up
+                </a>
+              </div>
+            </nav>
           </div>
         </div>
-      </section>
+      </div>
+    </header> -->
+    <!-- ====== Header End ====== -->
 
-      <section>
-        <h2>Latest News</h2>
-
-        <br />
+    <!-- ====== Hero Start ====== -->
+    <section
+      class="ud-hero"
+      id="home"
+      style="
+        background: url('assets/mainbanner.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+      "
+    >
+      <div class="container">
         <div class="row">
-          <div class="col-md-9">
-            <div class="d-flex flex-row justify-content-start">
-              <a href="#" style="width: 100rem" class="shadow-lg">
-                <div class="card shadow-lg">
-                  <img src="assets/blog/project1.png" class="card-img-top" />
+          <div class="col-lg-12">
+            <div
+              class="ud-hero-content wow fadeInUp"
+              data-wow-delay=".2s"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Hero End ====== -->
+
+    <!-- ====== Features Start ====== -->
+    <section id="features" class="ud-features">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="ud-section-title text-center">
+              <h2>Who we are</h2>
+              <p>
+                Poor accessibility to healthcare among EAC cross-border
+                truckers, traders and border resident populations as a result of
+                their remote residency and work settings, exposes them to great
+                medical risks which in-turn increases the risk of cross border
+                disease and/or epidemics transmission across East Africa
+                affecting integration and cross-border trade.
+                <a
+                  href="http://www.lyfplus.com/"
+                  class="hyperlink"
+                  target="_blank"
+                  >LyfPlus is a telemedicine platform</a
+                >
+                that integrates virtual physician consultation, hospital
+                appointment booking, diagnosis and e-prescription with various
+                healthcare providers to allow users to access important
+                medicalservicesinstantly and conveniently in one platform.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Features End ====== -->
+
+    <!-- ====== About Start ====== -->
+    <section
+      id="about"
+      class="ud-about"
+      style="background: url('assets/top_gradient.png'); background-size: cover"
+    >
+      <div class="container">
+        <div class="ud-about-wrapper wow fadeInUp" data-wow-delay=".2s">
+          <div class="ud-about-content-wrapper row">
+            <div class="ud-about-content col-md-7">
+              <h2>
+                The East African Cross-Border Telemedicine Platform Project
+              </h2>
+              <p style="text-align: left;">
+                With support and collaboration with the
+                <a
+                  href="https://www.eaciidea.net/"
+                  class="hyperlink"
+                  target="_blank"
+                  >EAC-GIZ Incubator for Integration and Development in East
+                  Africa (IIDEA)</a
+                >
+                and the
+                <a
+                  href="https://www.afdb.org/en"
+                  class="hyperlink"
+                  target="_blank"
+                  >African Development Bank Group</a
+                >
+                through its
+                <a
+                  href="https://www.afdb.org/en/topics-and-sectors/initiatives-partnerships/jobs-for-youth-in-africa/the-youth-entrepreneurship-and-innovation-multi-donor-trust-fund"
+                  class="hyperlink"
+                  target="_blank"
+                  >Youth Entrepreneurship and Innovation Multi-Donor Trust
+                  Fund</a
+                >, LyfPlus Limited launched the “EAC Cross-Border Telemedicine
+                Platform”, with the aim to improve healthcare accessibility
+                along the East African transport corridors for vulnerable
+                population groups including pregnant women and children,
+                cross-border truck drivers, traders, and border residents along
+                East African borders for safer integration and cross-border
+                trading.
+              </p>
+            </div>
+            <div class="col-md-5">
+              <img
+                src="assets/blog/project1.png"
+                style="max-width: 400px"
+                alt="about-image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="ud-about-wrapper wow fadeInUp" data-wow-delay=".2s">
+          <div class="ud-about-content-wrapper row">
+            <div class="ud-about-content col-md-7">
+              <h4>A Glance at the problem</h4>
+              <br />
+              <ul>
+                <li class="mb-2">
+                  <strong>1.</strong> Cross border truck drivers are
+                  occupationally a susceptible group, identified by UNAIDS as a
+                  key population having special medical needs. By the virtue of
+                  their continuous traveling, experience difficulty in accessing
+                  healthcare while they bear a disproportionate health burden.
+                </li>
+                <li class="mb-2">
+                  <strong>2.</strong> Limited health services along EAC
+                  transport corridors causes poor access to healthcare to
+                  vulnerable populations including women and children and other
+                  border populations. Lack to adequate health services means
+                  poor management of chronic conditions and poor care and
+                  treatment of infectious diseases like HIV and Tuberculosis.
+                </li>
+                <li class="mb-2">
+                  <strong>3.</strong> Delayed intervention and treatment of
+                  infectious diseases to these population groups increases the
+                  risk of disease transmission, as the untreated patient can
+                  engage with the rest of the community unknowingly, and wide-
+                  spreading in this case means cross-border transmission.
+                  Increase in disease exposure to cross- border truck drivers
+                  and traders increasesthe risk of cross-border transmission and
+                  consequently affects integration and cross-border trading.
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-5 text-center">
+              <img
+                src="assets/map.png"
+                style="max-width: 300px"
+                alt="about-image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="ud-about-wrapper wow fadeInUp" data-wow-delay=".2s">
+          <div class="ud-about-content-wrapper row">
+            <div class="ud-about-content col-md-4">
+              <div class="circle">96 per 1,000</div>
+              <p style="font-weight: bold">Children Mortality Rate</p>
+            </div>
+
+            <div class="ud-about-content col-md-4">
+              <div class="circle">10%</div>
+              <p style="font-weight: bold">Chronic Diseases Prevalence Rate</p>
+            </div>
+
+            <div class="ud-about-content col-md-4">
+              <div class="circle">446 per 100,000</div>
+              <p style="font-weight: bold">Maternal Mortality Rate</p>
+            </div>
+
+            <div class="ud-about-content col-md-12">
+              <p style="text-align: justify">
+                In 2017 village areas along Uganda, Rwanda, Kenya and Tanzania
+                border points including Malaba, Busia, Mtukula, Katuna and
+                Sirare had higher prevalence of diseases and epidemics than the
+                96 per 1,000 10% 446 per 100,000 Children Mortality Rate Chronic
+                Diseases Prevalence Rate Maternal Mortality Rate general
+                populations in the respective countries. Tuberculosis prevalence
+                was 4% higher and HIV was 7% higher prevalent in these villages.
+                Among cross-border truck drivers travelling along Mombasa to
+                Kampala and Kampala to Juba route, HIV prevalence was 18% higher
+                than the national prevalence of Kenya, Uganda and South Sudan
+                respectively. These statistical data portray the close
+                interrelated relationship between cross-border truck drivers and
+                EAC crossborder intra-regional disease/epidemic transmission.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== About End ====== -->
+
+    <!-- ====== Testimonials Start ====== -->
+    <section id="testimonials" class="ud-testimonials mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="ud-brands wow fadeInUp" data-wow-delay=".2s">
+              <div class="ud-title">
+                <h4>Our Partners</h4>
+              </div>
+              <div class="ud-brands-logo">
+                <div class="ud-single-logo">
+                  <img src="assets/partners/giz.jpeg" alt="ayroui" />
                 </div>
-              </a>
-              <div class="ms-3">
-                <h4>
-                  THE EAST AFRICAN CROSS BORDER <br />
-                  TELEMEDICINE PLATFORM PROJECT
-                </h4>
-                <p class="blog-text">
-                  With support and collaboration with the EAC-GIZ Incubator for
-                  Integration and Development in East Africa (IIDEA) and the
-                  African Development Bank Group through its Youth
-                  Entrepreneurship and Innovation Multi-Donor Trust Fund,
-                  LyfPlus Limited launched...
-                </p>
+                <div class="ud-single-logo">
+                  <img
+                    src="assets/partners/afdb.jpeg"
+                    style="max-width: 70%"
+                    alt="uideck"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+    <!-- ====== Testimonials End ====== -->
 
-      <section>
-        <div class="row">
-          <div class="col-md-6">
-            <h2>A word from our CEO</h2>
-            <br /><br />
-            <figure class="text-center">
-              <blockquote class="blockquote">
-                <p>
-                  In this ever-changing society, the most powerful and enduring
-                  brands are built from the heart. They are real and
-                  sustainable. Their foundations are stronger because they are
-                  built with the strength of the human spirit, not an ad
-                  campaign. The companies that are lasting are those that are
-                  authentic.
-                </p>
-              </blockquote>
-              <br />
-              <figcaption
-                class="blockquote-footer"
-                style="color: rgb(196, 196, 196)"
-              >
-                WILLIAM MDUMA,
-                <cite title="Source Title">Lyfplus Operations Lead</cite>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="col-md-6">
-            <img
-              src="assets/lyfplus-ceo-talking.jpeg"
-              style="max-width: 600px"
-                class="img-fluid"
-            />
-          </div>
-        </div>
-      </section>
+    <!-- ====== Back To Top Start ====== -->
+    <a href="javascript:void(0)" class="back-to-top">
+      <i class="lni lni-chevron-up"> </i>
+    </a>
+    <!-- ====== Back To Top End ====== -->
 
-      <section>
-        <div class="text-center">
-          <h2>Our Partners</h2>
-        </div>
+    <!-- ====== All Javascript Files ====== -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      // ==== for menu scroll
+      const pageLink = document.querySelectorAll(".ud-menu-scroll");
 
-        <div class="d-flex flex-row justify-content-around">
-          <div>
-            <img src="assets/partners/gizwhite.png" class="img-fluid" />
-          </div>
-          <div>
-            <img src="assets/partners/afdbwhite.png" class="img-fluid" />
-          </div>
-        </div>
-      </section>
+      pageLink.forEach((elem) => {
+        elem.addEventListener("click", (e) => {
+          e.preventDefault();
+          document.querySelector(elem.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+            offsetTop: 1 - 60,
+          });
+        });
+      });
 
-      <section></section>
-    </div>
+      // section menu active
+      function onScroll(event) {
+        const sections = document.querySelectorAll(".ud-menu-scroll");
+        const scrollPos =
+          window.pageYOffset ||
+          document.documentElement.scrollTop ||
+          document.body.scrollTop;
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
+        for (let i = 0; i < sections.length; i++) {
+          const currLink = sections[i];
+          const val = currLink.getAttribute("href");
+          const refElement = document.querySelector(val);
+          const scrollTopMinus = scrollPos + 73;
+          if (
+            refElement.offsetTop <= scrollTopMinus &&
+            refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
+          ) {
+            document
+              .querySelector(".ud-menu-scroll")
+              .classList.remove("active");
+            currLink.classList.add("active");
+          } else {
+            currLink.classList.remove("active");
+          }
+        }
+      }
+
+      window.document.addEventListener("scroll", onScroll);
+    </script>
   </body>
 </html>
